@@ -33,5 +33,5 @@ if ($RequestMethod == "POST") {
         'message' => $RequestMethod . ' Method Not Allowed'
     ];
     header('HTTP/1.0 405 Method Not Allowed');
-    echo json_encode($data);
+    return json_encode($data);
 }
