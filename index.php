@@ -3,7 +3,7 @@
     <img src="/feedback-php/img/logo.png" class="w-25 mb-3" alt="">
     <h2>Feedback</h2>
     <p class="lead text-center">Leave feedback for Traversy Media</p>
-    <form action="" class="mt-4 w-75">
+    <form action="" method="POST" class="mt-4 w-75">
       <div class="mb-3">
         <label for="name" class="form-label">Name</label>
         <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
@@ -21,4 +21,6 @@
       </div>
     </form>
    
-    <?php include 'inc/footer.php' ?>    
+    <?php include 'inc/footer.php';
+          include 'data/create.php';
+    ?>    
