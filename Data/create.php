@@ -23,7 +23,7 @@ if ($RequestMethod == "POST") {
         $storeFeedback = storeFeedback($inputData);
     }
 
-    header("Location: /index.php");
+    // header('Location: ../feedback.php');
     exit();
 
     // echo $storeFeedback;

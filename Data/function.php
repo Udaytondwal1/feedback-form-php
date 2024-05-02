@@ -46,7 +46,7 @@ function storeFeedback($feedbackInput){
         ];
         header("HTTP/1.0 201 Stored");
         return json_encode($data);
-        header("Location: index.php");
+        // header("Location: ");
         exit();
      
       }else{
@@ -56,12 +56,6 @@ function storeFeedback($feedbackInput){
     }
     
 };
-
-
-
-
-
-
 
 
 function getFeedbackList()

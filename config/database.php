@@ -3,7 +3,7 @@
    define('DB_HOST', 'localhost');
    define('DB_USER', 'uday');
    define('DB_PASS', '123456');
-   define('DB_NAME', 'feedbackdb');
+   define('DB_NAME', 'feedbackdb'); 
 
 // making connection to DB
 

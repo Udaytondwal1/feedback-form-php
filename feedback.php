@@ -3,7 +3,9 @@
 
 <?php
 error_reporting(0);
+// get json data from this URL to show in page
 $jsonData = file_get_contents('http://localhost/feedback-php/data/read.php');
+// decode json data into array format
 $data = json_decode($jsonData, true);
 ?>
 <h2>Feedback</h2>
@@ -11,7 +13,6 @@ $data = json_decode($jsonData, true);
     <?php
     if ($data && isset($data["data"])) {
         $feedback_arr = $data["data"];
-
         foreach ($feedback_arr as $item) : ?>
             <div class="card my-3 w-80">
                 <div class="card-body text-center">
@@ -23,7 +24,7 @@ $data = json_decode($jsonData, true);
             </div>
     <?php endforeach;
     } else {
-        echo "Failed to decode JSON data";
+        echo "No feedbacks found!";
     }
     ?>
 </div>
